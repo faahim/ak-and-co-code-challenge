@@ -1,0 +1,25 @@
+.searchBoxWrapper {
+  width: 765px;
+  margin: 10px auto;
+  position: relative;
+  display: flex;
+  form {
+    flex: 1;
+    display: flex;
+    input {
+      width: 100%;
+      font-size: 18px;
+      color: #fff;
+      background-color: #000;
+      outline: none;
+      padding: 12px 38px;
+      border: 2px solid #fff;
+      border-radius: 40px;
+    }
+  }
+  .searchIcon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+}
