@@ -1,19 +1,26 @@
+@import './breakpoints';
+@import './variables';
+
 .searchBoxWrapper {
-  width: 765px;
+  width: 80%;
+  min-width: 320px;
   margin: 10px auto;
   position: relative;
   display: flex;
+  @include media-breakpoint-up(md) {
+    width: 765px;
+  }
   form {
     flex: 1;
     display: flex;
     input {
       width: 100%;
       font-size: 18px;
-      color: #fff;
-      background-color: #000;
+      color: $secondary-text-color;
+      background-color: $primary-color;
       outline: none;
       padding: 12px 38px;
-      border: 2px solid #fff;
+      border: 2px solid $secondary-color;
       border-radius: 40px;
     }
   }
