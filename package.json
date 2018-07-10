@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "ak-and-co-code-challenge",
+  "description": "A web page created as part of a coding challenge for Ak&Co",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Afiur Rahman Fahim <afiur.fahim@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
@@ -10,9 +10,7 @@
     "gatsby-plugin-sass": "^1.0.26",
     "react-helmet": "^5.2.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["ak&co"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -32,6 +30,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/faahim/ak-and-co-code-challenge.git"
   }
 }
