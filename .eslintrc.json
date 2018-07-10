@@ -1,0 +1,13 @@
+{
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "graphql": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": "false",
+    "react/jsx-one-expression-per-line": "false"
+  }
+}
