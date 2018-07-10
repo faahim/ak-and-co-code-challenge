@@ -8,6 +8,7 @@
   },
   "rules": {
     "import/no-extraneous-dependencies": "false",
-    "react/jsx-one-expression-per-line": "false"
+    "react/jsx-one-expression-per-line": "false",
+    "react/jsx-filename-extension": "false"
   }
 }
