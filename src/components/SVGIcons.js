@@ -1,8 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from '../styles/SearchBox.module.scss'
 
-const SearchIcon = () => (
+const SearchIcon = ({ handleClick }) => (
   <svg
+    onClick={handleClick}
     className={styles.searchIcon}
     width="20px"
     height="20px"
@@ -17,5 +19,9 @@ const SearchIcon = () => (
     />
   </svg>
 )
+
+SearchIcon.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+}
 
 export default SearchIcon

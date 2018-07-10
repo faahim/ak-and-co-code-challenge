@@ -53,7 +53,7 @@ class SearchBox extends Component {
             placeholder={placeholderText}
             onChange={this.handleInput}
           />
-          <SearchIcon />
+          <SearchIcon handleClick={this.handleSubmit} />
         </form>
       </div>
     )
