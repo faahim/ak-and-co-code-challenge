@@ -1,4 +1,5 @@
 import React from 'react'
+import Container from '../layouts/Container'
 import Cards from './Cards'
 import styles from '../styles/SupportSection.module.scss'
 
@@ -43,10 +44,10 @@ const SupportSection = () => {
 
   return (
     <section className={styles.supportSection}>
-      <div className={styles.supportContentWrapper}>
+      <Container>
         <h2>Support Topics</h2>
         <Cards cardItems={supportItems} />
-      </div>
+      </Container>
     </section>
   )
 }
