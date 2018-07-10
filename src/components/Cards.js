@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from '../styles/SupportSection.module.scss'
+import styles from '../styles/Cards.module.scss'
 
 const Cards = ({ cardItems }) => (
   <div className={styles.cardWrapper}>
