@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-
 import Header from '../components/header'
+import logo from '../imgs/logo.svg'
+import backgroundImage from '../imgs/header-bg.png'
 import './index.module.scss'
 
 const Layout = ({ children, data }) => (
@@ -14,7 +15,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header logo={logo} backgroundImage={backgroundImage} />
     <div
       style={{
         margin: '0 auto',
@@ -23,6 +24,7 @@ const Layout = ({ children, data }) => (
         paddingTop: 0,
       }}
     >
+      {/* {console.log(`Muula ${JSON.stringify(data)}`)} */}
       {children()}
     </div>
   </div>
