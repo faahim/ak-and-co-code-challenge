@@ -6,7 +6,7 @@ import styles from '../styles/header.module.scss'
 const Header = ({ logo, backgroundImage }) => (
   <header
     style={{
-      backgroundImage: `url(${backgroundImage}), linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))`,
+      backgroundImage: `url(${backgroundImage}), linear-gradient(rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.98))`,
     }}
   >
     <img src={logo} className={styles.logo} alt="UFC Logo" />
