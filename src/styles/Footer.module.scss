@@ -1,0 +1,11 @@
+@import './variables';
+
+.bottomBar {
+  padding: 40px 0;
+  background-color: $primary-color;
+  p {
+    color: $mute-text-color;
+    font-weight: bold;
+    text-align: center;
+  }
+}

@@ -1,0 +1,29 @@
+@import './breakpoints';
+@import './variables';
+
+.contactRow {
+  padding: 42px 0;
+  .contactWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    @include media-breakpoint-up(sm) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    a {
+      color: $secondary-color;
+      background-color: $accent-color;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: darken($color: $accent-color, $amount: 10%);
+      }
+    }
+  }
+}
