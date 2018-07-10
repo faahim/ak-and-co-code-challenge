@@ -1,0 +1,37 @@
+.supportSection {
+  background-color: #f9f9f9;
+  padding: 60px 0 75px 0;
+  .supportContentWrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+    h2 {
+      text-align: center;
+    }
+    .cardWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      .card {
+        width: calc(25% - 40px);
+        height: 120px;
+        margin: 20px;
+        background-color: #fff;
+        display: flex;
+        a {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #000;
+          font-weight: 500;
+          text-decoration: none;
+          border: 1px solid transparent;
+          transition: all 0.3s;
+          &:hover {
+            color: #ff0d0e;
+            border-color: #ff0d0e;
+          }
+        }
+      }
+    }
+  }
+}
