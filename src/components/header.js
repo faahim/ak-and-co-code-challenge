@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import SearchBox from './SearchBox'
 import styles from '../styles/header.module.scss'
 
 const Header = ({ logo, backgroundImage }) => (
@@ -10,6 +11,7 @@ const Header = ({ logo, backgroundImage }) => (
   >
     <img src={logo} className={styles.logo} alt="UFC Logo" />
     <h2>What can we help with?</h2>
+    <SearchBox />
   </header>
 )
 
