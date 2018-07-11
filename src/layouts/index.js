@@ -6,7 +6,7 @@ import Header from '../components/header'
 import Footer from '../components/Footer'
 import logo from '../imgs/logo.svg'
 import backgroundImage from '../imgs/header-bg.png'
-import './index.module.scss'
+import '../styles/index.module.scss'
 
 const Layout = ({ children, data }) => (
   <div>
