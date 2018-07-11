@@ -8,6 +8,9 @@ import logo from '../imgs/logo.svg'
 import backgroundImage from '../imgs/header-bg.png'
 import '../styles/index.module.scss'
 
+// Components of this file is shared accorss *all* pages
+// Hence common components like Header and Footer is placed here.
+// It receives stuff of the ./page/index.js by default
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
@@ -30,6 +33,7 @@ Layout.propTypes = {
 
 export default Layout
 
+// Gets metadata about site from 'gatsby-config.js' file
 export const query = graphql`
   query SiteTitleQuery {
     site {

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import SearchBox from './SearchBox'
 import styles from '../styles/header.module.scss'
 
+// Header accepts a logo and an image. It sets the image as the
+// background of header.
 const Header = ({ logo, backgroundImage }) => (
   <header
     style={{

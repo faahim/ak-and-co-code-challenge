@@ -4,6 +4,9 @@ import Cards from './Cards'
 import styles from '../styles/SupportSection.module.scss'
 
 const SupportSection = () => {
+  // New cards can be added by simply adding a object property
+  // in this array. The <Cards/> component itarates over this
+  // array and generates cards.
   const supportItems = [
     {
       title: 'UFC Pay-Per-View',

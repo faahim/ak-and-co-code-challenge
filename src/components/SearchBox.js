@@ -16,12 +16,15 @@ class SearchBox extends Component {
     this.resetPlaceholer = this.resetPlaceholer.bind(this)
   }
 
+  // Updates inputs value as user types
   handleInput(e) {
     this.setState({
       inputText: e.target.value,
     })
   }
 
+  // Resets the input field and shows and notificaion placeholder
+  // for 2.5 sec when user submits the form.
   handleSubmit(e) {
     e.preventDefault()
     this.setState(
@@ -35,6 +38,7 @@ class SearchBox extends Component {
     )
   }
 
+  // Resets the placeholder to default text
   resetPlaceholer() {
     this.setState({
       placeholderText: 'Have a question? Ask here or enter a search term',

@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from '../styles/SearchBox.module.scss'
 
+// This file is used to export different SVG files as components
+// so can be imported and used as inline SVG throught the app/site
 const SearchIcon = ({ handleClick }) => (
   <svg
     onClick={handleClick}
