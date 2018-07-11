@@ -37,17 +37,23 @@ gatsby develop
 This command will compile the project and start it on a localhost which you can access at `localhost:8000` using your web browser.
 You can now open files in your favorite code editor and start developing. Gatsby has most of the common development tooling like hot-reloading, SASS compilation etc installed by default. Any change you make will be reflected immediately in the browser. Errors in code and linting issues will be logged to the terminal window.
 
+## Building and Deploying
+
 Once you're done making your changes, you can create an optimized static build of the site using the command:
 
 ```sh
 gatsby build
 ```
 
+The generated static HTML/CSS/JS files can be found under the `./public` directory.
+
 If you're happy with the changes and want to publish the update, you can deploy the site directly to GitHub Pages using:
 
 ```sh
 npm run deploy
 ```
+
+This will deploy files from the `./public` folder to the GitHub repo specified in `./gatsby-config.js` files `pathPrfix` field.
 
 ## Why Gatsby?
 
