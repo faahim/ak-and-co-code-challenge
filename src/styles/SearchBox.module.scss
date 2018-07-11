@@ -2,20 +2,21 @@
 @import './variables';
 
 .searchBoxWrapper {
-  width: 80%;
-  min-width: 320px;
+  width: 100%;
   margin: 10px auto;
   position: relative;
   display: flex;
+  @include media-breakpoint-up(sm) {
+    width: 80%;
+  }
   @include media-breakpoint-up(md) {
-    width: 765px;
+    max-width: 765px;
   }
   form {
     flex: 1;
     display: flex;
     input {
       width: 100%;
-      font-size: 18px;
       color: $secondary-text-color;
       background-color: $primary-color;
       outline: none;

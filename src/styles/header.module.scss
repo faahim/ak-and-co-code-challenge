@@ -4,12 +4,13 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 55px 50px;
+  padding: 65px 50px;
   background-size: cover;
   img.logo {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   h2 {
+    font-size: $large-heading-size;
     text-align: center;
     color: $secondary-color;
   }
