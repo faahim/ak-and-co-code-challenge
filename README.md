@@ -19,7 +19,7 @@ Run this command from your terminal to install gatsby-cli:
 npm install --global gatsby-cli
 ```
 
-You may need to use `sudo` in the beginning of the command depending on your user accounts write acess to the system.
+You may need to use `sudo` in the beginning of the command depending on your user accounts write access to the system.
 
 Once you have the repo and gatsby-cli tool, move to the project directory and install all the dependencies using these command:
 
@@ -35,19 +35,31 @@ gatsby develop
 ```
 
 This command will compile the project and start it on a localhost which you can access at `localhost:8000` using your web browser.
-You can now open files in your favorite code editor and start developing. Gatsby has most of the common development tooling like hot-reloding, SASS compilation etc installed by default. Any change you make will be reflected immidiately in the browser. Errors in code and linting issues will be logged to the terminal window.
+You can now open files in your favorite code editor and start developing. Gatsby has most of the common development tooling like hot-reloading, SASS compilation etc installed by default. Any change you make will be reflected immediately in the browser. Errors in code and linting issues will be logged to the terminal window.
+
+Once you're done making your changes, you can create an optimized static build of the site using the command:
+
+```sh
+gatsby build
+```
+
+If you're happy with the changes and want to publish the update, you can deploy the site directly to GitHub Pages using:
+
+```sh
+npm run deploy
+```
 
 ## Why Gatsby?
 
-React is my favorite tool of choice for most use cases. But in this case, it's a small, non-dynamic web page for which a full blown React app seemed an overkill to me. Creating some plain, good old HTML, CSS files felt like the best option. But I also don't want to miss out on amazing features that React provides. Things like modular component, conditional rendering, generating content programmatically etc which enhances both development experience and usability a lot.
+React is my favorite tool of choice for most use cases. But in this case, it's a small, non-dynamic web page for which a full-blown React app seemed an overkill to me. Creating some plain, good old HTML, CSS files felt like the best option. But I also don't want to miss out on amazing features that React provides. Things like modular component, conditional rendering, generating content programmatically etc which enhances both development experience and usability a lot.
 
-This is where Gatsby comes in. It's a static file genarator tool. It generates plain HTML, CSS files from React codebase. Not just that, it has a ton of optimization built-in and smart features to enhance performance of web pages greatly. So essentially, I get to use best of the both world by using Gatsby.
+This is where Gatsby comes in. It's a static file generator tool. It generates plain HTML, CSS files from React codebase. Not just that, it has a ton of optimization built-in and smart features to enhance performance of web pages greatly. So essentially, I get to use best of the both world by using Gatsby.
 
 You can think about Gatsby as just another version of the popular React starter `create-react-app`. But instead of generating a JavaScript app, it generates static web pages. You don't need to learn anything new to use Gatsby other than how the file structure work. You can learn more about Gatsby from their official site [here](https://www.gatsbyjs.org/docs/).
 
 ## Project Structure
 
-The top level project structure looks like this:\
+The top-level project structure looks like this:\
 ![Gatsby project structure](https://i.imgur.com/iYAJSHL.png 'Project file structure')
 
 All the source code is located under `./src` folder. You can find the following folder under the `./src` directory:
@@ -61,7 +73,7 @@ src/
 └── styles/
 ```
 
-The `index.js` file under `./src/layouts` directory the main entry-point to the application. The content in this file is shared across the entire application/site. So, components that needs to rendered on every pages (e.g. Header, Footer) is imported and used here. This file also imports the contents of `index.js` file under the `./src/pages/` by default and renderes them as the entry page. This means, the `index.js` file of `./src/pages/` directory acts as the homepage. We can then link to other pages from that page.
+The `index.js` file under `./src/layouts` directory the main entry-point to the application. The content in this file is shared across the entire application/site. So, components that needs to rendered on every pages (e.g. Header, Footer) is imported and used here. This file also imports the contents of `index.js` file under the `./src/pages/` by default and renders them as the entry page. This means, the `index.js` file of `./src/pages/` directory acts as the homepage. We can then link to other pages from that page.
 
 All the reusable React components is stored under the `./src/components` folder and imported in any other component as needed. Any component related to layout is stored under the `./src/layouts` folder. `./src/pages` folder houses components that import other components and form a page. All the stylesheets and images are stored in `./src/styles` and `./imgs` respectively.
 
@@ -78,8 +90,8 @@ The following tools/libraries/plugins/methodologies is used in the project:
 
 ## Personal Notes
 
-I personally do feel like some parts of this project is maybe over-complicated. CSS Modules, for instance, is something that really shines in larger projects and doesn't really adds many benifits to small project like this one. But I chose these anyway because I wanted set up this project just the way I would for a serious project. And I guess thats what the purpose of this test is.
+I personally do feel like some parts of this project is maybe over-complicated. CSS Modules, for instance, is something that really shines in larger projects and doesn't really adds many benefits to small project like this one. But I chose these anyway because I wanted set up this project just the way I would for a serious project. And I guess that's what the purpose of this test is.
 
-The font 'Klavika' that is used in the design, is a permium font and I don't own it. So I used the Google font 'Roboto' as an alternative. I hope that is okay.
+The font 'Klavika' that is used in the design, is a premium font and I don't own it. So I used the Google font 'Roboto' as an alternative. I hope that is okay.
 
 I look forward for your feedback. Thank you so much for your time! :)
